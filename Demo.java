@@ -1,13 +1,14 @@
+import java.util.Scanner;
 public class Demo
 {
- public static void main(String []args)
- {
-   int b[]={10,20,30,40};
-   for(int i=0;i<b.length;i++)
-   {
-     System.out.println("b["+i+"]="+b[i]);
-   }
- }
+  public static void main(String args[])
+  {
+   Scanner sc = new Scanner(System.in);
+   int m=sc.nextInt();
+   calFact(m);
+  }
+  public static void calFact(int val){
+     int cude=val*val*val;
+	System.out.println("Cude  "+cude);
+  }
 }
-//for (int val : b) {
-    //System.out.println(val);}

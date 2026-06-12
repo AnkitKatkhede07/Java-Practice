@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <style>
+        body{
+            --bg:#bfeff3;
+            --paper:#ffffff;
+      --muted:#efefef;
+      --accent:#d3d3d3;
+      --text:#111;
+      --heading:#222;
+      --border:#cfcfcf;
+      --shadow: rgba(0,0,0,0.08);
+      --max-width:760px;
+      --gutter:22px;
+       margin:0;
+      font-family: 'Montserrat', system-ui, 
+      -apple-system, "Segoe UI", Roboto, 
+      "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--text);
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:40px 18px;
+        }
+    
+    h1{
+      text-align:center;
+      
+      margin-bottom:14px;
+    }
+     h1{
+      margin:6px 0 8px;
+      font-size:30px;
+      letter-spacing:1px;
+      font-weight:800;
+      color:var(--heading);
+    }
+  p.lead{
+      margin:0 auto;
+      font-size:12px;
+      max-width:620px;
+      color:#444;
+    }
+
+    form{
+      margin-top:10px;
+    }
+
+    /* grid for rows */
+    .row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      margin-bottom:12px;
+      align-items:center;
+    }
+
+    /* single column row */
+    .row.full{
+      grid-template-columns: 1fr;
+    }
+
+    label{
+      font-size:13px;
+      color:#333;
+      display:block;
+      margin-bottom:6px;
+      font-weight:500;
+    }
+
+    .input, .textarea, .select-box{
+      background:var(--muted);
+      border:1px solid var(--border);
+      padding:12px 10px;
+      border-radius:2px;
+      width:100%;
+      font-size:14px;
+      color:#222;
+    }
+
+    textarea.input{
+      min-height:70px;
+      resize:vertical;
+      padding-top:10px;
+    }
+
+    /* section heading bar */
+    .section-title{
+      background:var(--accent);
+      padding:12px 14px;
+      text-align:center;
+      font-weight:700;
+      letter-spacing:0.6px;
+      margin:18px 0 12px;
+      font-size:16px;
+      border-radius:2px;
+    }
+
+    hr.thin{
+      border:0;
+      border-top:2px solid #222;
+      margin:12px 0 18px;
+    }
+      .small-note{
+      font-size:12px;
+      color:#444;
+      margin:8px 0 12px;
+    }
+
+    /* phone check row */
+    .phone-checkboxes{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin-top:6px;
+      font-size:13px;
+    }
+
+    .field-inline{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+
+    /* bottom footer fields */
+    .bottom-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      margin-top:12px;
+    }
+
+    .muted-row{
+      font-size:13px;
+      color:#444;
+      background:transparent;
+      margin-top:18px;
+    }
+
+    </style>
+</head>
+<body>
+    <div><h1><b><u>REGISTRATION FROM</u></b></h1></div>
+    <DIV>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Velit aperiam ducimus expedita! Eligendi quidem inventore recusandae sapiente quod?
+         Ea distinctio corrupti aperiam delectus quae et iure. Laboriosam molestiae animi repellendus?</DIV>
+        <form class="full"autocomplete>
+            <div class="row">
+            <div>
+              <label>Name :</label>
+              <input class="input" placeholder="Full name" />
+            </div>
+            <div>
+              <label>Date of Birth :</label>
+              <input class="input" type="date" />
+            </div>
+            </div>
+       <div class="row">
+            <div>
+              <label>Address 1 :</label>
+              <input class="input" placeholder="Address line 1" />
+            </div>
+            <div>
+              <label>Address 2 :</label>
+              <input class="input" placeholder="Address line 2" />
+            </div>
+         </div>
+        <div class="row">
+            <div>
+              <label>City :</label>
+              <input class="input" placeholder=" " />
+            </div>
+            <div>
+              <label>Phone Number :</label>
+              <input class="input" placeholder="Home🏠 & Cell 📱" />
+            </div>
+          </div>
+        </form> 
+        <hr class="thin" />
+        <div class="section-title">CONTACT DETAILS</div>
+
+          <div class="row">
+            <div>
+              <label>E-mail :</label>
+              <input class="input" type="email" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label>Business Name :</label>
+              <input class="input" placeholder="Company / Business" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Father's Name :</label>
+              <input class="input" placeholder="Father's name" />
+            </div>
+            <div>
+              <label>Mother's Name :</label>
+              <input class="input" placeholder="Mother's name" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Other 1 :</label>
+              <input class="input" placeholder="Other detail 1" />
+            </div>
+            <div>
+              <label>Other 2 :</label>
+              <input class="input" placeholder="Other detail 2" />
+            </div>
+          </div>
+
+          <!-- Other Informations -->
+</body>
+</html>

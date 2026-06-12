@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registration Form</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#bfeff3;
+      --paper:#ffffff;
+      --muted:#efefef;
+      --accent:#d3d3d3;
+      --text:#111;
+      --heading:#222;
+      --border:#cfcfcf;
+      --shadow: rgba(0,0,0,0.08);
+      --max-width:760px;
+      --gutter:22px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:40px 18px;
+    }
+
+    /* Paper container with offset shadow like the image */
+    .page-wrap{
+      width:100%;
+      max-width:calc(var(--max-width) + 60px); /* slightly larger to show shadow */
+      position:relative;
+      display:flex;
+      justify-content:center;
+      pointer-events:none;
+    }
+
+    .paper-shadow{
+      position:absolute;
+      inset:auto 24px 24px 0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.04);
+      transform:rotate(-1deg);
+      z-index:0;
+      border-radius:2px;
+    }
+
+    .paper{
+      pointer-events:auto;
+      background:var(--paper);
+      width:100%;
+      max-width:var(--max-width);
+      border:6px solid #fff; /* white frame */
+      padding:18px;
+      box-shadow: 0 10px 0 rgba(0,0,0,0.03);
+      position:relative;
+      z-index:2;
+    }
+
+    /* Inner thin black border like the image */
+    .paper-inner{
+      border:2px solid #222;
+      padding:18px;
+    }
+
+    header{
+      text-align:center;
+      margin-bottom:14px;
+    }
+    header h1{
+      margin:6px 0 8px;
+      font-size:30px;
+      letter-spacing:1px;
+      font-weight:800;
+      color:var(--heading);
+    }
+    header p.lead{
+      margin:0 auto;
+      font-size:12px;
+      max-width:620px;
+      color:#444;
+    }
+
+    form{
+      margin-top:10px;
+    }
+
+    /* grid for rows */
+    .row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      margin-bottom:12px;
+      align-items:center;
+    }
+
+    /* single column row */
+    .row.full{
+      grid-template-columns: 1fr;
+    }
+
+    label{
+      font-size:13px;
+      color:#333;
+      display:block;
+      margin-bottom:6px;
+      font-weight:500;
+    }
+
+    .input, .textarea, .select-box{
+      background:var(--muted);
+      border:1px solid var(--border);
+      padding:12px 10px;
+      border-radius:2px;
+      width:100%;
+      font-size:14px;
+      color:#222;
+    }
+
+    textarea.input{
+      min-height:70px;
+      resize:vertical;
+      padding-top:10px;
+    }
+
+    /* section heading bar */
+    .section-title{
+      background:var(--accent);
+      padding:12px 14px;
+      text-align:center;
+      font-weight:700;
+      letter-spacing:0.6px;
+      margin:18px 0 12px;
+      font-size:16px;
+      border-radius:2px;
+    }
+
+    hr.thin{
+      border:0;
+      border-top:2px solid #222;
+      margin:12px 0 18px;
+    }
+
+    .small-note{
+      font-size:12px;
+      color:#444;
+      margin:8px 0 12px;
+    }
+
+    /* phone check row */
+    .phone-checkboxes{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin-top:6px;
+      font-size:13px;
+    }
+
+    .field-inline{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+
+    /* bottom footer fields */
+    .bottom-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      margin-top:12px;
+    }
+
+    .muted-row{
+      font-size:13px;
+      color:#444;
+      background:transparent;
+      margin-top:18px;
+    }
+
+    /* form labels smaller for printing */
+    .label-muted{font-weight:500; font-size:13px; color:#222}
+
+    footer{
+      text-align:center;
+      font-size:12px;
+      margin-top:18px;
+      color:#333;
+    }
+
+    /* responsiveness */
+    @media (max-width:720px){
+      .row{grid-template-columns:1fr;}
+      .page-wrap{padding:0 6px}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrap">
+    <div class="paper-shadow" aria-hidden="true"></div>
+
+    <div class="paper" role="main">
+      <div class="paper-inner">
+
+        <header>
+          <h1>REGISTRATION FORM</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </header>
+
+        <form autocomplete="off" novalidate>
+          <!-- top fields -->
+          <div class="row">
+            <div>
+              <label>Name :</label>
+              <input class="input" placeholder="Full name" />
+            </div>
+            <div>
+              <label>Date of Birth :</label>
+              <input class="input" type="date" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Address 1 :</label>
+              <input class="input" placeholder="Address line 1" />
+            </div>
+            <div>
+              <label>Address 2 :</label>
+              <input class="input" placeholder="Address line 2" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>City :</label>
+              <input class="input" placeholder="City" />
+            </div>
+            <div>
+              <label>Phone Number :</label>
+              <input class="input" placeholder="+91 98765 43210" />
+              <div class="phone-checkboxes">
+                <label><input type="checkbox" /> Home</label>
+                <label><input type="checkbox" /> Cell</label>
+              </div>
+            </div>
+          </div>
+
+          <hr class="thin" />
+
+          <!-- Contact Details -->
+          <div class="section-title">CONTACT DETAILS</div>
+
+          <div class="row">
+            <div>
+              <label>E-mail :</label>
+              <input class="input" type="email" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label>Business Name :</label>
+              <input class="input" placeholder="Company / Business" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Father's Name :</label>
+              <input class="input" placeholder="Father's name" />
+            </div>
+            <div>
+              <label>Mother's Name :</label>
+              <input class="input" placeholder="Mother's name" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Other 1 :</label>
+              <input class="input" placeholder="Other detail 1" />
+            </div>
+            <div>
+              <label>Other 2 :</label>
+              <input class="input" placeholder="Other detail 2" />
+            </div>
+          </div>
+
+          <!-- Other Informations -->
+          <div class="section-title">OTHER INFORMATIONS</div>
+
+          <div class="row">
+            <div>
+              <label>Start Date</label>
+              <input class="input" type="date" />
+            </div>
+            <div>
+              <label>End Date</label>
+              <input class="input" type="date" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Time</label>
+              <input class="input" type="time" />
+            </div>
+            <div>
+              <label>Annual Payment</label>
+              <div style="display:flex; gap:8px;">
+                <input class="input" placeholder="Amount" style="flex:1" />
+                <input class="input" placeholder="$" style="width:80px" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Total Annual Payment</label>
+              <div style="display:flex; gap:8px;">
+                <input class="input" placeholder="Total" style="flex:1" />
+                <input class="input" placeholder="$" style="width:80px" />
+              </div>
+            </div>
+            <div></div>
+          </div>
+
+          <p class="muted-row small-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+
+          <div class="row">
+            <div>
+              <label>Full Name :</label>
+              <input class="input" placeholder="Full name" />
+            </div>
+            <div>
+              <label>Paid Via :</label>
+              <input class="input" placeholder="Payment method" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>Date :</label>
+              <input class="input" type="date" />
+            </div>
+            <div>
+              <label>Signature :</label>
+              <input class="input" placeholder="Sign here" />
+            </div>
+          </div>
+
+          <footer>
+            <div>WWW.YOURWEBSITE.COM</div>
+          </footer>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

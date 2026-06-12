@@ -1,0 +1,15 @@
+*{
+    border: 5px;
+    background: white;
+    
+}
+.container{
+    border: 80px solid #000;
+    padding: top 10px;
+    padding-left: 25px;
+    padding-left: 50px;
+}
+h1{
+    color: red;
+
+}

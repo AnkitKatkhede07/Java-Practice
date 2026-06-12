@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Co</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+      line-height:1.6;
+      color:#333;
+    }
+    header{
+      background:#f5f7fa;
+      padding:20px 80px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    header h1{
+      color:#000;
+    }
+    nav a{
+      margin-left:20px;
+      text-decoration:none;
+      color:#000;
+      font-weight:bold;
+    }.hero{
+  display:flex;
+  align-items:center;
+  padding:80px;
+  background:#f5f7fa;
+}
+.hero-text{
+  flex:1;
+}
+.hero-text h1{
+  font-size:42px;
+  margin-bottom:20px;
+}
+.hero-text p{
+  margin-bottom:25px;
+  color:#555;
+}
+.btn{
+  padding:12px 25px;
+  background:#000;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  border-radius:4px;
+}
+.hero-img{
+  flex:1;
+  text-align:right;
+   background: #1ecad3;
+}
+.hero-img img{
+  width:80%;
+  border-radius:6px;
+  background: #1ecad3;
+}
+
+.features{
+  display:flex;
+  text-align:center;
+}
+.feature{
+  flex:1;
+  padding:40px 20px;
+  color:#fff;
+}
+.feature.black{background:#000;}
+.feature.blue{background:#1ecad3;}
+.feature.dark{background:#1b6f75;}
+
+.about{
+  padding:80px;
+  text-align:center;
+}
+.about h2{margin-bottom:20px;}
+.about p{color:#666;}
+
+.split{
+  display:flex;
+  align-items:center;
+  padding:60px 80px;
+  /* background:#f5f7fa; */
+  background:lightskyblue;
+}
+.split img{
+  width:45%;
+  border-radius:6px;
+}
+.split-text{
+  padding-left:40px;
+}
+.split-text h2{margin-bottom:15px;}
+
+.services{
+  padding:80px;
+  text-align:center;
+}
+.service-box{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  margin-top:40px;
+}
+.service{
+  padding:30px;
+  border:1px solid #eee;
+  border-radius:8px;
+}
+
+.cta{
+  /* background:#1ecad3; */
+  color:#fff;
+  padding:60px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+@media(max-width:900px){
+  .hero,.split{flex-direction:column; text-align:center;}
+  .hero-img img,.split img{width:100%;}
+  .split-text{padding:0; margin-top:20px;}
+  .service-box{grid-template-columns:1fr;}
+  header{flex-direction:column;}
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Business Com</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header><section class="hero">
+  <div class="hero-text">
+    <h1>We help your brand to be recognizable</h1>
+    <p>We provide best marketing solutions to grow your business and increase brand value.</p>
+    <button class="btn">Learn More</button>
+  </div>
+  <div class="hero-img">
+    <img src="" alt="team" />
+  </div>
+</section><section class="features">
+  <div class="feature black">Quality Product</div>
+  <div class="feature blue">Growth Strategy</div>
+  <div class="feature dark">Competitive Price</div>
+</section><section class="about">
+  <h2>About Company</h2>
+  <p>We are a creative agency providing innovative solutions for your business growth.</p>
+</section><section class="split">
+  <img src="" alt="business" />
+  <div class="split-text">
+    <h2>Doing the right thing at the right time</h2>
+    <p>Our team works with dedication to deliver the best outcomes for your company.</p>
+  </div>
+</section><section class="services">
+  <h2>Our Services</h2>
+  <div class="service-box">
+    <div class="service">Branding</div>
+    <div class="service">Marketing</div>
+    <div class="service">Development</div>
+    <div class="service">Web Design</div>
+    <div class="service">Social Media</div>
+    <div class="service">E-commerce</div>
+  </div>
+</section><section class="cta">
+  <h2>Get to know today!</h2>
+  <button class="btn">Contact Us</button>
+</section><footer>
+  <p>© 2025 Business Co. All Rights Reserved.</p>
+</footer></body>
+</html>

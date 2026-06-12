@@ -1,0 +1,29 @@
+import.java.util.*;
+public class ArithmeticOperation2
+{
+  public static void main(String x[]);
+  {
+    Scanner scanner new= Scanner(System.int);
+	//int num
+	System.out.println("Enter first number:");
+	int a = scanner.nextInt(); 
+	System.out.println("Enter Secound number:");
+	int b = scanner.nextInt();
+	int sum;
+	//ArithmaticOperation
+	  /*  sum=a+b;
+	int sum1=a-b;
+	int sum2=a*b;
+	int sum3=a/b;
+	int sum4=a%b;
+	//int sum5=*/
+	System.out.println("add to num :"+(a+b));
+	System.out.println("sub to num :"+(a-b));
+    System.out.println("mul to num :"+(a*b));
+    System.out.println("add to num :"+(a/b));
+	System.out.println("sub to num :"+(a%b));
+    //System.out.println("mul to num :"+(a*b));
+
+	
+  }
+}
